@@ -1,23 +1,24 @@
 # Gold CREST Trailer Design Project
 
-This repo contains the files which make up the two models I used in my gold CREST project.
+This repository contains the Python source code which makes up the two models I used in my Gold CREST project, to investigate:
 
-1. low-speed reversing stability and manoeuvrability
-2. high-speed dynamic stability and trailer sway
+1. low-speed reversing stability and manoeuvrability.
+2. high-speed dynamic stability and trailer sway.
 
 ## Repository structure
 
-- `primary-investigation/` – kinematic model for primary investigation
-- `supporting-investigation/` – dynamic model for supporting investigation
+- `KinematicModel/` – kinematic model for primary investigation.
+- `DynamicSwayModel/` – dynamic model for supporting investigation.
 
 ## Requirements
 - Python 3
 - NumPy
 - Matplotlib
 
-## Running the models
-Both investigations contain  files that holds the calculation function and sets of inputs. These should not be run or changed, unless the the user desires a set of input parametres that cannot be aquired with waht already exists in the input options file.
+## Folder Contents
+Each folder contains the calculation function, input configurations and graph production program used for their respective investigations. The kinematic model also contains an animation. 
 
-For the reversing investigation there is also an animation function which can be run.
+## Running and Using the Files
+Files should be run within their model folders so that the appropriate local imports can be found.
 
-Both investigatinons have graph plotting functions which allow the independent variable to be changed through a range and the results plotted in a series of graphs. The graphs and functions within each are slightly different and the code should be looked thorugh before running so that the correct graphs are plotted for the user.
+Using the graph production files requires the most thoughtful use and input selection. Labels for legends, titles and variables to be plotted all need to be chosen and written. As these are frequently changed to produce different graphs when testing the project I cannot be sure what they will look like at this point in time. The original functions will all still function properly but selecting which to use and what inputs they require may require more thought. I have tried to provide comments beneath detailing what the suitable inputs are. 
