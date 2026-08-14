@@ -11,7 +11,7 @@ This repository contains the Python source code which makes up the two models I 
 - `DynamicSwayModel/` – dynamic model for supporting investigation.
 
 ## Requirements
-- Python 3
+- Python 3.12+
 - NumPy
 - Matplotlib
 
