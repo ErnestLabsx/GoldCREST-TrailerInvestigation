@@ -133,14 +133,14 @@ settings            = CS.ogSettings.copy()
 allInputs = [initialConditions, vehicleDimensions, trailerDimensions, settings, controls]
 
 # Investigated Variable Inputs
-investigatedVar = "steeringAngle"
-iVOptions = np.deg2rad(np.linspace(50, -50, 7))
+investigatedVar = "timeStep"
+iVOptions = np.array([0.1, 0.05, 0.01, 0.005, 0.001, 0.0005, 0.0001])
 # Graph Appearance Inputs
 xLabel = "Time (s)"
-yLabel = " Vehicle Heading Angle ROC (°)"
+yLabel = "Articulation Angle (°)"
 xKey = "time"
-yKey = "vehicleHeadingRoC"
-title = "Vehicle Heading vs Time for Different Time Steps"
+yKey = "articulationAngle"
+title = "Articulation Angle vs Time for Different Time Steps"
 legendKeys = []
 for i in range(len(iVOptions)):
     legendKeys.append(f"Time Step = {iVOptions[i]:.3f}s")
